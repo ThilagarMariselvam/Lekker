@@ -1,0 +1,156 @@
+.portfolio__content {
+  top: -7rem;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20rem 20rem 20rem 20rem;
+      grid-template-columns: 20rem 20rem 20rem 20rem;
+  -ms-grid-rows: (25rem)[4];
+      grid-template-rows: repeat(4, 25rem);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+.portfolio__content > * {
+  margin: 0;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.portfolio__content img {
+  width: 20rem;
+  height: 25rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*************
+    image Section
+     ************/
+.black {
+  background-image: url("../images/grid/black3.png");
+}
+
+.alphabet {
+  background-image: url("../images/grid/alphabet3.jpeg");
+}
+
+.david {
+  background-image: url("../images/grid/david3.jpg");
+}
+
+.face {
+  background-image: url("../images/grid/face1.jpg");
+}
+
+.illustrate {
+  background-image: url("../images/grid/illustrate3.png");
+}
+
+.mona {
+  background-image: url("../images/grid/mona3.jpg");
+}
+
+.flower {
+  background-image: url("../images/grid/blossom2.jpg");
+}
+
+.direction {
+  background-image: url("../images/grid/direction2.jpg");
+}
+
+.chinese {
+  background-image: url("../images/grid/chinese3.jpg");
+}
+
+.groupies {
+  background-image: url("../images/grid/groupies2.jpg");
+}
+
+.mask {
+  background-image: url("../images/grid/mask2.jpg");
+}
+
+.img1 {
+  opacity: 1;
+  height: 25rem;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  position: absolute;
+}
+
+.img2 {
+  opacity: 0;
+  -webkit-transition-delay: 1.5s;
+          transition-delay: 1.5s;
+  width: 0;
+  position: absolute;
+  height: 0;
+}
+
+.mainImg:hover .img2 {
+  opacity: 1;
+  width: 20rem;
+  height: 25rem;
+}
+
+.mainImg:hover .img1 {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  right: 100;
+}
+
+/*************
+    Text Section
+     ************/
+.branding {
+  padding: 2rem;
+  background-color: white;
+}
+
+.branding h1 {
+  width: 70%;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.branding h2 {
+  font-size: 1rem;
+}
+
+.branding h2:after, .branding h2:before {
+  content: '';
+  display: block;
+  position: absolute;
+  margin-left: 6.5rem;
+  width: 2px;
+  height: .9rem;
+  -webkit-transition: -webkit-transform .1s 0s ease-out;
+  transition: -webkit-transform .1s 0s ease-out;
+  transition: transform .1s 0s ease-out;
+  transition: transform .1s 0s ease-out, -webkit-transform .1s 0s ease-out;
+  background-color: black;
+}
+
+.branding h2:before {
+  margin-top: .2rem;
+}
+
+.branding h2:after {
+  margin-top: -.8rem;
+}
+
+.branding h2:hover:before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.branding h2:hover:after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+/*# sourceMappingURL=portfolio__content.css.map */

@@ -1,0 +1,134 @@
+.portfolio__content {
+    top: -7rem;
+    position: relative;
+    display: grid;
+    grid-template-columns: 20rem 20rem 20rem 20rem;
+    grid-template-rows: repeat(4, 25rem);
+    justify-content: center;
+    overflow: hidden;
+}
+.portfolio__content >* {
+    margin: 0;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+.portfolio__content img {
+    width: 20rem;
+    height: 25rem;
+    object-fit: cover;
+}
+
+    /*************
+    image Section
+     ************/
+
+.black {
+    background-image: url('../images/grid/black3.png');
+}
+
+.alphabet {
+    background-image: url('../images/grid/alphabet3.jpeg');
+}
+
+.david {
+    background-image: url('../images/grid/david3.jpg');
+}
+.face {
+    background-image: url('../images/grid/face1.jpg');
+}
+.illustrate {
+    background-image: url('../images/grid/illustrate3.png');
+}
+.mona {
+    background-image: url('../images/grid/mona3.jpg');
+}
+.flower {
+    background-image: url('../images/grid/blossom2.jpg');
+}
+
+.direction{
+    background-image: url('../images/grid/direction2.jpg');
+}
+
+.chinese {
+    background-image: url('../images/grid/chinese3.jpg');
+}
+
+.groupies {
+    background-image: url('../images/grid/groupies2.jpg');
+}
+.mask {
+    background-image: url('../images/grid/mask2.jpg');
+}
+
+.img1{
+    opacity: 1;
+    height: 25rem;
+    transition-delay: 1s;
+    position: absolute;
+}
+.img2 {
+    opacity: 0;
+    transition-delay: 1.5s;
+    width: 0;
+    position: absolute;
+    height: 0;
+}
+.mainImg:hover{
+    
+    .img2 {
+        opacity: 1;
+        width: 20rem;
+        height: 25rem;
+        
+    }
+    .img1 {
+        opacity: 0;
+        width: 0;
+        height: 0;
+        right: 100;
+    }
+}
+
+    /*************
+    Text Section
+     ************/
+
+.branding {
+    padding: 2rem;
+    background-color: white;
+    h1 {
+        width: 70%;
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+    h2{
+        font-size: 1rem;
+    }
+    h2:after,h2:before{
+        content: '';
+        display: block;
+        position: absolute;
+        margin-left: 6.5rem;
+        width: 2px;
+        height: .9rem;
+        transition: transform .1s 0s ease-out;
+        background-color: black;
+    }
+    h2:before{
+        margin-top: .2rem;
+    }
+    h2:after{
+        margin-top: -.8rem;
+    }
+    h2:hover:before {
+        transform: rotate(-45deg);
+    }
+    h2:hover:after {
+        transform: rotate(45deg);
+    }
+}
+
+
+
